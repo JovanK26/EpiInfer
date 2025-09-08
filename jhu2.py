@@ -194,6 +194,7 @@ def main():
 
 	print(f"Start EpiInfer output for testdays={testdays}")
 	print(sum(msels)/len(msels))
+	print(preddata[0,10+testdays:50+testdays+1,2,0])
 	print(f"End EpiInfer output for testdays={testdays}")
 	
 
