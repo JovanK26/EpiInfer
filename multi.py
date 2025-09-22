@@ -234,10 +234,13 @@ def main():
 		msels.append(calcmse2(simdata,cdata))
 
 	print(f"Start EpiInfer Multilocale output for testdays={testdays}")
-	print(sum(msels)/len(msels))
+	print("Error List: ", msels)
+	print("Average Error: ", sum(msels)/len(msels))
+	print("Daily Predictions: ", preddata[0,10+testdays:50+testdays+1,2,0])
 	print(f"End EpiInfer Multilocale output for testdays={testdays}")
 	
 
 
 main()
+
 
